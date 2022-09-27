@@ -1,6 +1,5 @@
 body {
     width: 100%;
-    background-image: url=("images/circlepp.png");
     display: flex;
 }
 .titresite {
@@ -88,7 +87,18 @@ h2 {
     text-decoration: underline;
 }
 .travaux {
-    border: 2px solid;
     display: flex;
     align-items: center;
+    justify-content: space-around;
+}
+h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(163, 97, 224, 0.795);
+    border-radius: 15%;
+    height: 110px;
+    width: 200px;
+    text-align: center;
+    color: rgb(226, 226, 226);
 }

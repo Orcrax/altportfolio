@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>REBATÉ Matthieu - Portfolio</title>
+        <link rel="shortcut icon" href="cv/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="mainalt.css"/>
+    </head>
+    <body>
+        <header>
+            <img class="banniere" src="https://place-puppy.com/1920x300">
+            <div class="cirlepp">
+                <img src="images/circlepp.png">
+            </div>
+            <div class="titresite">
+            <h1>Matthieu Rebaté</h1>
+            <p>Tell me, what if that you truly desire ?</p>
+            </div>
+            <nav>
+                <ul>
+                    <li>À propos</li>
+                    <li>Compétences</li>
+                    <li>Travaux</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+            <section class="about">
+                <div class="presentation">
+                    <h2 class="titresection">À propos de moi :</h2>
+                    <hr/>
+                    <p>Issu d'une formation très hétéroclite passant des arts à la grande distribution, puis au secrétariat médical/juridique, je me tourne désormais vers le codage HTML et CSS.<br/>
+                        Ayant suscité un intérêt très fort pour cette discipline, je cherche désormais à me perfectionner et à en explorer les différentes applications possibles.<br /><br />
+                        Mai 2022 : Formation HTML5 et CSS3 sur OpenClassRoom validée.<br/>
+                        Septembre 2022 : Entrée en formation à DonkeySchool.</p>
+                    <h2>Mes compétences :</h2>
+                    <hr/>
+                    <div class="jaugexp">
+                    <label for="photo">Photographie évènementielle :</label>
+                        <progress id="photo" max="100" value="90"> 90% </progress>
+                        <label for="retouche">Retouche et création :</label>
+                        <progress id="retouche" max="100" value="80"> 80% </progress>
+                        <label for="formation">Partage de connaissances via formation :</label>
+                        <progress id="formation" max="100" value="80"> 80% </progress>
+                        <label for="html">HTML & CSS</label>
+                        <progress id="html" max="100" value="60"> 60% </progress>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Travaux</h2>
+                <hr/>
+                <div class="travaux">
+                    <h3>Photographie</h3>
+                    <h3>Création</h3>
+                    <h3>Code</h3>
+                </div>
+
+            </section>
+            <section class="form">
+                <h1>Contactez-moi !</h1>
+                <div class="coordonnees">
+                    <div>
+                        <form class="form" action="/ma-page-de-traitement" method="post">
+                            <label for="name">Nom :   </label>
+                            <input type="text" id="name" name="user_name" placeholder=" Nom et Prénom"/>
+                    </div>
+                    <div>
+                        <label for="mail">E-mail&nbsp;: </label>
+                        <input type="email" id="mail" name="user_mail" placeholder=" exemple@ndd.com">
+                    </div>
+                    <div>
+                        <label for="msg">Message :</label>
+                        <textarea id="msg" name="user_message" placeholder=" Taper votre message ici"></textarea>
+                    </div>
+                    <a class="envoyer" href="mailto:pro@matthieurebate.fr">Envoyer</a>
+                        </form>
+                </div>           
+            </body>
+            </section>
+        </header>
+    </body>

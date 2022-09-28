@@ -1,104 +1,187 @@
 body {
-    width: 100%;
     display: flex;
+    font-family: Helvetica, sans-serif;
+    border: 2px solid;
 }
-.titresite {
+hr {
+    width: 40%;
+    margin-bottom: 3%;
+}
+h2 {
+    text-align: center;
+    margin-top: 10%;
+}
+/*################################ NAV ######################################*/
+#banniere {
+    width: 1920px;
+    height: 300px;
+}
+header {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 32.5%; left: 43%
+    width: 20%;
+    height: 100%;
+}
+.circlepp {
+    z-index: 2;
 }
 div img {
-    width: 20%;
-    height: 20%;
-    margin-top: -10%;
-    margin-left: 2.5%;
+    width: 100%;
+    height: 100%;
+    margin-top: -50%;
+    margin-left: 1%;
 }
 nav li {
     list-style-type: none;
     margin-bottom: 5%;
     align-items: center;
     margin-left: 20%;
+    width: 60%;
 }
 ul {
    display: flex;
    flex-direction: column;
 }
 nav {
-    float: left;
     background-color: rgba(135, 72, 250, 0.526);
-    width: 15%;
-    margin-left: 5%;
-    margin-top: -6%;
-    padding-top: 5%;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: -34%;
+    padding-top: 35%;
     padding-bottom: 1%;
     border-radius: 10%;
+    z-index: 1;
 }
-section {
-    width: 50%;
-    float: right;
-    margin-right: 20%;
-    padding-right: 5%;
-}
-.jaugexp {
+/*################################# ABOUT ######################################*/
+.presentation {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-top: 15%;
 }
-hr {
-    width: 40%;
+#about {
+    padding-top: 3%;
 }
-h2 {
-    text-align: center;
+#jaugexp {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-left: 2%;
 }
+/*############################## WORK/CIRCLES #################################*/
+.travaux {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid;
+    justify-content: center;
+}
+#cc {
+	position: relative;
+	width: 170px;
+	height: 170px;
+	border-radius: 40%;
+	overflow: hidden;
+}
+.circle {
+	width: 170px;
+	height: 170px;
+	position: absolute;
+	border-radius: 50%;
+}
+#photo:before {
+	content: "Photographie";
+}
+#crea:before {
+    content: "Création";
+}
+#code:before {
+    content: "Code";
+}
+#photo {
+	background-color: rgba(37, 17, 191, 0.45);
+	font-size: 20px;
+	letter-spacing: 1.5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-weight: bold;
+	transition: 2s;
+}
+#crea {
+	background-color: rgba(144, 73, 250, 0.45);
+	font-size: 20px;
+	letter-spacing: 1.5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-weight: bold;
+	transition: 2s;
+}
+#code {
+	background-color: rgba(0, 166, 255, 0.45);
+	font-size: 20px;
+	letter-spacing: 1.5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-weight: bold;
+	transition: 2s;
+}
+#two {
+	background-color: rgb(0, 157, 255);
+	transition: 1s;
+	opacity: 0.5;
+}
+#three {
+	background-color: rgb(255, 0, 221);
+	transition: 1s;
+	opacity: 0.5;
+}
+#four {
+	background-color: rgb(98, 0, 255);
+	transition: 1s;
+	opacity: 0.5;
+}
+#five {
+	background-color: green;
+	transition: 1s;
+	opacity: 0.5;
+}
+#cc:hover #two {
+	transform: translate(0px, 40px);
+}
+#cc:hover #three {
+	transform: translate(0px, -40px);
+}
+#cc:hover #four {
+	transform: translate(40px, 0px);
+}
+#cc:hover #five {
+	transform: translate(-40px, 0px);
+}
+/*################################## FORM #####################################*/
 #msg {
     width: 500px;
     height: 150px;
 }
-
 #mail {
     width: 500px;
     height: 30px;
 }
-
 #name {
     width: 500px;
     height: 30px;
 }
-
 .coordonnees {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 8%;
 }
-
 .coordonnees div, .envoyer{
     margin-top: 2%;
 }
-
-.envoyer {
-    padding-right: 0%;
-}
 .coordonnees label {
     display: none;
-}
-.selected {
-    text-decoration: underline;
-}
-.travaux {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-h3 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(163, 97, 224, 0.795);
-    border-radius: 15%;
-    height: 110px;
-    width: 200px;
-    text-align: center;
-    color: rgb(226, 226, 226);
 }

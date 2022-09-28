@@ -8,58 +8,79 @@
     </head>
     <body>
         <header>
-            <img class="banniere" src="https://place-puppy.com/1920x300">
-            <div class="cirlepp">
+            <img id="banniere" src="https://place-puppy.com/1920x300">       
+            <div class="circlepp">
                 <img src="circlepp.png">
-            </div>
-            <div class="titresite">
-            <h1>Matthieu Rebaté</h1>
-            <p>Tell me, what is that you truly desire ?</p>
             </div>
             <nav>
                 <ul>
-                    <li>À propos</li>
-                    <li>Compétences</li>
-                    <li>Travaux</li>
-                    <li>Contact</li>
+                    <a href=#about><li>À propos</li></a>
+                    <a href=#jaugexp><li>Compétences</li></a>
+                    <a href=#work><li>Travaux</li></a>
+                    <a href=#contact><li>Contact</li></a>
                 </ul>
             </nav>
-            <section class="about">
+        </header>
+        <div class="bodypage">
+            <section id="about">
                 <div class="presentation">
-                    <h2 class="titresection">À propos de moi :</h2>
+                    <h2>À propos de moi :</h2>
                     <hr/>
                     <p>Issu d'une formation très hétéroclite passant des arts à la grande distribution, puis au secrétariat médical/juridique, je me tourne désormais vers le codage HTML et CSS.<br/>
-                        Ayant suscité un intérêt très fort pour cette discipline, je cherche désormais à me perfectionner et à en explorer les différentes applications possibles.<br /><br />
-                        Mai 2022 : Formation HTML5 et CSS3 sur OpenClassRoom validée.<br/>
-                        Septembre 2022 : Entrée en formation à DonkeySchool.</p>
+                    Ayant suscité un intérêt très fort pour cette discipline, je cherche désormais à me perfectionner et à en explorer les différentes applications possibles.<br /><br />
+                    Mai 2022 : Formation HTML5 et CSS3 sur OpenClassRoom validée.<br/>
+                    Septembre 2022 : Entrée en formation à DonkeySchool.</p>
                     <h2>Mes compétences :</h2>
                     <hr/>
-                    <div class="jaugexp">
-                    <label for="photo">Photographie évènementielle :</label>
-                        <progress id="photo" max="100" value="100"> 100% </progress>
-                        <label for="retouche">Retouche et création :</label>
-                        <progress id="retouche" max="100" value="100"> 100% </progress>
-                        <label for="formation">Formateur & transfert de compétences:</label>
-                        <progress id="formation" max="100" value="80"> 80% </progress>
-                        <label for="html">HTML & CSS</label>
-                        <progress id="html" max="100" value="60"> 60% </progress>
+                    <div id="jaugexp">
+                        <label for="photo">Photographie évènementielle :</label>
+                            <progress id="photoxp" max="100" value="100"> 100% </progress>
+                            <label for="retouche">Retouche et création :</label>
+                            <progress id="retouche" max="100" value="100"> 100% </progress>
+                            <label for="formation">Formateur & transfert de compétences:</label>
+                            <progress id="formation" max="100" value="80"> 80% </progress>
+                            <label for="html">HTML & CSS</label>
+                            <progress id="html" max="100" value="60"> 60% </progress>
                     </div>
                 </div>
             </section>
-            <section>
-                <h2>Travaux</h2>
+            <section id="work">
+                <h2>Travaux réalisés</h2>
                 <hr/>
                 <div class="folder">
                 </div>
                 <div class="travaux">
-                    <h3>Photographie</h3>
-                    <h3>Création</h3>
-                    <h3>Code</h3>
+                    <div id="circle-container">
+                        <div id="cc">
+                        <div class="circle" id="five"></div>
+                        <div class="circle" id="four"></div>
+                        <div class="circle" id="three"></div>
+                        <div class="circle" id="two"></div>
+                        <div class="circle" id="photo"></div>
+                    </div>
+                    <div id="circle-container">
+                            <div id="cc">
+                            <div class="circle" id="five"></div>
+                            <div class="circle" id="four"></div>
+                            <div class="circle" id="three"></div>
+                            <div class="circle" id="two"></div>
+                            <div class="circle" id="crea"></div>
+                            </div>
+                    </div>
+                    <div id="circle-container">
+                        <div id="cc">
+                        <div class="circle" id="five"></div>
+                        <div class="circle" id="four"></div>
+                        <div class="circle" id="three"></div>
+                        <div class="circle" id="two"></div>
+                        <div class="circle" id="code"></div>
+                    </div>
                 </div>
 
             </section>
-            <section class="form">
-                <h1>Contactez-moi !</h1>
+            <section id="contact" class="form">
+                <h2>Contactez-moi</h2>
+                <hr/>
                 <div class="coordonnees">
                     <div>
                         <form class="form" action="/ma-page-de-traitement" method="post">
@@ -76,8 +97,7 @@
                     </div>
                     <a class="envoyer" href="mailto:pro@matthieurebate.fr">Envoyer</a>
                         </form>
-                </div>           
-            </body>
-            </section>
-        </header>
+                </div>
+            </section> 
+        </div>          
     </body>

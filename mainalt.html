@@ -7,27 +7,26 @@
         <link rel="stylesheet" href="mainalt.css"/>
     </head>
     <body>
-        <header>     
-            <div class="circlepp">
-                <img src="circlepp.png">
-            </div>
-            <nav>
-                <label>
-                    <input type="checkbox">
-                    <span class="menu"> <span class="hamburger"></span> </span>
-                    <ul>
-                      <li> <a href="#about">À propos</a> </li>
-                      <li> <a href="#jaugexp">Compétences</a> </li>
-                      <li> <a href="#work">Travaux</a> </li>
-                      <li><a href=#contact>Contact</li></a></li>
-                    </ul>
+        <div id="bodypage">
+            <header>
+                <div class="circlepp">
+                    <img src="circlepp.png"/>
+                    <h1>Matthieu Rebaté</h1>
+                    <h2>Photographer - Web Developper</h2>
+                </div>          
+                <nav class="sticky">
+                    <label>
+                        <input type="checkbox">
+                        <span class="menu"> <span class="hamburger"></span> </span>
+                        <ul class="navbar">
+                            <li><a href="#about">À propos</a></li>
+                            <li><a href="#jaugexp">Compétences</a></li>
+                            <li><a href="#work">Travaux</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
                     </label>
-            </nav>
-        </header>
-        <div class="banniere">
-        </div>
-        <div class="bodypage">
-            
+                </nav>
+            </header>           
             <section id="about">
                 <div class="presentation">
                     <h2>À propos de moi :</h2>
@@ -38,23 +37,17 @@
                     Septembre 2022 : Entrée en formation à DonkeySchool.</p>
                     <h2>Mes compétences :</h2>
                     <hr/>
-                    <div id="jaugexp">
-                        <label for="photo">Photographie évènementielle :</label>
-                            <progress id="photoxp" max="100" value="100"> 100% </progress>
-                            <label for="retouche">Retouche et création :</label>
-                            <progress id="retouche" max="100" value="100"> 100% </progress>
-                            <label for="formation">Formateur & transfert de compétences:</label>
-                            <progress id="formation" max="100" value="80"> 80% </progress>
-                            <label for="html">HTML & CSS</label>
-                            <progress id="html" max="100" value="60"> 60% </progress>
+                    <div id="comp">
+                        <h3>Photographie évènementielle</h3>                          
+                        <h3>Retouche et création</h3>                         
+                        <h3>Formateur & transfert de compétences</h3>
+                        <h3>HTML5 & CSS3</h3>
                     </div>
                 </div>
             </section>
             <section id="work">
                 <h2>Travaux réalisés</h2>
                 <hr/>
-                <div class="folder">
-                </div>
                 <div class="travaux">
                     <div id="circle-container">
                         <div id="cc">

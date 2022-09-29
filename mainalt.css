@@ -6,10 +6,13 @@
             font-size: 1.2em;
             line-height: 1.4;
             overflow-x: hidden;
-            background: url("background.jpg") fixed no-repeat;
+            background: url("images/background.jpg") fixed no-repeat;
+            font-family: Helvetica, sans-serif;
         }
         h2 {
             text-align: center;
+            font-size: 1em;
+            text-decoration: underline;
         }
         label .menu {
             position: absolute;
@@ -147,9 +150,7 @@
             padding-left: 1%;
             padding-right: 1%;
             height: 25em;
-        }
-        #comp h2 {
-            margin-bottom: -10%;
+            margin-top: 5%;
         }
         #comp h3 {
             text-align: center;
@@ -198,10 +199,23 @@
             background-color: rgba(1, 76, 110, 0.54);
             width: 100%;
             height: 70%;
-            margin-top: 325%;
-            margin-bottom: 10%;
+            margin-top: 280%;
         }
+            /*################################## Footer ###################################*/
+    h4 {
+        text-align: center;
+        font-size: 0.8em;
     }
+    .logosm {
+        display: flex;
+        justify-content: space-between;
+    }
+    .logosm img {
+        width: 60%;
+        margin-bottom: 10%;
+        margin-left: 15%;
+    }
+}
 
 /*########################################################################*/
 /*########################################################################*/   
@@ -215,7 +229,7 @@
         flex-direction: column;
         align-items: center;
         font-family: Helvetica, sans-serif;
-        background: url("background.jpg") fixed no-repeat;
+        background: url("images/background.jpg") fixed no-repeat;
     }
     hr {
         width: 40%;
@@ -286,9 +300,6 @@
         margin-left: 5%;
         margin-right: 10%;
     }
-    .formation {
-        margin-bottom: 7%;
-    }
     #comp {
         display: flex;
         align-items: center;
@@ -296,6 +307,7 @@
         padding-left: 1%;
         padding-right: 1%;
         height: 25em;
+        margin-top: 5%;
     }
     #comp h3 {
         text-align: center;
@@ -342,6 +354,19 @@
         width: 100%;
         height: 70%;
         margin-top: 10%;
+        margin-bottom: 0%;
+    }
+    /*################################## Footer ###################################*/
+    h4 {
+        text-align: center;
+    }
+    .logosm {
+        display: flex;
+        justify-content: space-between;
+    }
+    .logosm img {
+        width: 60%;
         margin-bottom: 10%;
+        margin-left: 15%;
     }
 }

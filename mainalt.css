@@ -1,20 +1,15 @@
     @media all and (max-width: 600px) {
-        .travaux {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            margin-top: 5%;
-        }
-        .circlepp {
-            display: none;
-        }
         *, *:before, *:after 
         { box-sizing: border-box; }
         html { font-size: 18px; }
         body {
             font-size: 1.2em;
-            line-height: 1.6;
+            line-height: 1.4;
             overflow-x: hidden;
+            background: url("background.jpg") fixed no-repeat;
+        }
+        h2 {
+            text-align: center;
         }
         label .menu {
             position: absolute;
@@ -23,11 +18,11 @@
             z-index: 100;
             width: 200px;
             height: 200px;
-            background: rgb(251, 222, 255);
+            background: rgba(0, 127, 182, 0.8);
             border-radius: 50% 50% 50% 50%;
             -webkit-transition: .5s ease-in-out;
             transition: .5s ease-in-out;
-            box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+            box-shadow: 0 0 0 0 rgba(0, 127, 182, 0.8), 0 0 0 0 rgba(0, 127, 182, 0.8);
             cursor: pointer;
             }
         label .hamburger {
@@ -36,7 +31,7 @@
             left: 50px;
             width: 30px;
             height: 2px;
-            background: #6600ff;
+            background: #d6f4ff;
             display: block;
             -webkit-transform-origin: center;
             transform-origin: center;
@@ -51,13 +46,13 @@
             display: block;
             width: 100%;
             height: 100%;
-            background: #6600ff;
+            background: #d6f4ff;
             }
         label .hamburger:before { top: -10px; }
         label .hamburger:after { bottom: -10px; }
         label input { display: none; }
         label input:checked + .menu {
-        box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
+        box-shadow: 0 0 0 100vw rgba(0, 127, 182, 0.8), 0 0 0 100vh rgba(0, 127, 182, 0.8);
         border-radius: 0;
         }
         label input:checked + .menu .hamburger {
@@ -76,6 +71,7 @@
         }
         label input:checked + .menu + ul { opacity: 1; }
         label ul {
+            list-style-type: none;
         z-index: 200;
         position: absolute;
         top: 50%;
@@ -89,24 +85,121 @@
         label a {
         margin-bottom: 2em;
         display: block;
-        color: #883399;
+        color: white;
         text-decoration: none;
         }
-        h1 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        width: 90%;
-        text-align: center;
+        hr {
+            width: 40%;
+            margin-bottom: 3%;
+        }        
+        #bodypage {
+            width: 99%;
+            margin-top: 1%;
+            margin-bottom: 1%;
+            margin: 1% 0% 1% 1%;
+            background-color: rgba(228, 228, 228, 0.781);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+            /*################################ NAV ######################################*/
+        .circlepp {
+            text-align: center;
+            margin-top: 5%;
+        }
+        .circlepp hr {
+            width: 80%;
+            margin-top: 10%;
+        }
+        .circlepp h1 {
+            text-decoration: underline;
+            font-size: 1.7em;
+        }
+        .circlepp h2 {
+            padding-top: -5%;
+            font-size: 0.8em;
+            margin-top: -6%;
+        }
+        .circlepp img {
+            width: 50%;
+            margin-top: 3%;
+        }
+        .formation {
+            margin-bottom: 10%;
+        }
+        .presentation {
+            display: flex;
+            flex-direction: column;
+            width: 95%;
+            margin-left: 3%;
+        }
+        .presentation p {
+            font-size: 0.8em;
+        }
+        .profil {
+            font-size: 2em;
+        }
+        #comp {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-left: 1%;
+            padding-right: 1%;
+            height: 25em;
+        }
+        #comp h2 {
+            margin-bottom: -10%;
+        }
+        #comp h3 {
+            text-align: center;
+            position: relative;
+            top: -350px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.6 );
+        }
+        #comp div div {
+            margin-top: -3%;
+            height: 100%;
+        }
+        .photo {
+            margin-top: 24%;
+        }
+        /*################################## FORM #####################################*/
+        #contact h2 {
+            text-align: center;
+            margin-top: 10%;
+        }
+        #msg {
+            width: 500px;
+            height: 150px;
+        }
+        #mail {
+            width: 500px;
+            height: 30px;
+        }
+        #name {
+            width: 500px;
+            height: 30px;
+        }
+        .coordonnees {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .coordonnees div, .envoyer{
+            margin-top: 2%;
+            padding-bottom: 3%;
+        }
+        .coordonnees label {
+            display: none;
         }
         #contact {
-            background-color: rgba(0, 152, 222, 0.54);
+            background-color: rgba(1, 76, 110, 0.54);
             width: 100%;
             height: 70%;
-            border-radius: 15%;
-            margin-top: 10%;
+            margin-top: 325%;
+            margin-bottom: 10%;
         }
     }
 
@@ -114,7 +207,7 @@
 /*########################################################################*/   
 
 @media screen and (min-width: 601px) {        
-    input {
+    .sticky label input {
         display: none;
     }
     body {
@@ -153,6 +246,9 @@
     .circlepp {
         text-align: center;
     }
+    .circlepp hr {
+        display: none;
+    }
     .circlepp h1 {
         text-decoration: underline;
     }
@@ -190,106 +286,31 @@
         margin-left: 5%;
         margin-right: 10%;
     }
+    .formation {
+        margin-bottom: 7%;
+    }
     #comp {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding-left: 1%;
         padding-right: 1%;
+        height: 25em;
     }
-    /*############################## WORK/CIRCLES #################################*/
-    .travaux {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-top: 5%;
-    }
-    #cc {
+    #comp h3 {
+        text-align: center;
         position: relative;
-        width: 170px;
-        height: 170px;
-        border-radius: 40%;
-        overflow: hidden;
-    }
-    .circle {
-        width: 170px;
-        height: 170px;
-        position: absolute;
-        border-radius: 50%;
-    }
-    #photo:before {
-        content: "Photographie";
-    }
-    #crea:before {
-        content: "Création";
-    }
-    #code:before {
-        content: "Code";
-    }
-    #photo {
-        background-color: rgba(37, 17, 191, 0.45);
-        font-size: 20px;
-        letter-spacing: 1.5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        top: -225px;
         color: white;
-        font-weight: bold;
-        transition: 2s;
+        background-color: rgba(0, 0, 0, 0.6 );
     }
-    #crea {
-        background-color: rgba(144, 73, 250, 0.45);
-        font-size: 20px;
-        letter-spacing: 1.5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        font-weight: bold;
-        transition: 2s;
+    #comp div div {
+        height: 100%;
+        margin-top: 25%;
     }
-    #code {
-        background-color: rgba(0, 166, 255, 0.45);
-        font-size: 20px;
-        letter-spacing: 1.5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        font-weight: bold;
-        transition: 2s;
-    }
-    #two {
-        background-color: rgb(0, 157, 255);
-        transition: 1s;
-        opacity: 0.5;
-    }
-    #three {
-        background-color: rgb(255, 0, 221);
-        transition: 1s;
-        opacity: 0.5;
-    }
-    #four {
-        background-color: rgb(98, 0, 255);
-        transition: 1s;
-        opacity: 0.5;
-    }
-    #five {
-        background-color: green;
-        transition: 1s;
-        opacity: 0.5;
-    }
-    #cc:hover #two {
-        transform: translate(0px, 40px);
-    }
-    #cc:hover #three {
-        transform: translate(0px, -40px);
-    }
-    #cc:hover #four {
-        transform: translate(40px, 0px);
-    }
-    #cc:hover #five {
-        transform: translate(-40px, 0px);
+
+    .photo {
+        margin-top: 24%;
     }
     /*################################## FORM #####################################*/
     #msg {
@@ -317,10 +338,9 @@
         display: none;
     }
     #contact {
-        background-color: rgba(0, 152, 222, 0.54);
-        width: 50%;
+        background-color: rgba(1, 76, 110, 0.54);
+        width: 100%;
         height: 70%;
-        border-radius: 15%;
         margin-top: 10%;
         margin-bottom: 10%;
     }

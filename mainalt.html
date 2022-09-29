@@ -13,6 +13,7 @@
                     <img src="circlepp.png"/>
                     <h1>Matthieu Rebaté</h1>
                     <h2>Photographer - Web Developper</h2>
+                    <hr/>
                 </div>          
                 <nav class="sticky">
                     <label>
@@ -20,8 +21,7 @@
                         <span class="menu"> <span class="hamburger"></span> </span>
                         <ul class="navbar">
                             <li><a href="#about">À propos</a></li>
-                            <li><a href="#jaugexp">Compétences</a></li>
-                            <li><a href="#work">Travaux</a></li>
+                            <li><a href="#comp">Compétences</a></li>
                             <li><a href="#contact">Contact</a></li>
                         </ul>
                     </label>
@@ -30,58 +30,34 @@
             <section id="about">
                 <div class="presentation">
                     <h2>À propos de moi :</h2>
-                    <hr/>
-                    <p>Issu d'une formation très hétéroclite passant des arts à la grande distribution, puis au secrétariat médical/juridique, je me tourne désormais vers le codage HTML et CSS.<br/>
-                    Ayant suscité un intérêt très fort pour cette discipline, je cherche désormais à me perfectionner et à en explorer les différentes applications possibles.<br /><br />
-                    Mai 2022 : Formation HTML5 et CSS3 sur OpenClassRoom validée.<br/>
+                    <p class="profil">Issu d'une formation très hétéroclite passant des arts à la grande distribution, puis au secrétariat médical/juridique, je me tourne désormais vers le codage HTML et CSS.<br/>
+                    Ayant suscité un intérêt très fort pour cette discipline, je cherche désormais à me perfectionner et à en explorer les différentes applications possibles.<br /><br /></p>
+                    <p class="formation">Mai 2022 : Formation HTML5 et CSS3 sur OpenClassRoom validée.<br/>
                     Septembre 2022 : Entrée en formation à DonkeySchool.</p>
-                    <h2>Mes compétences :</h2>
                     <hr/>
-                    <div id="comp">
-                        <h3>Photographie évènementielle</h3>                          
-                        <h3>Retouche et création</h3>                         
-                        <h3>Formateur & transfert de compétences</h3>
-                        <h3>HTML5 & CSS3</h3>
+                    <h2>Mes compétences :</h2>
+                    <div id="comp">                      
+                        <div>
+                            <div class="photo"><img src="wedding.JPG"></div>
+                            <h3 >Photographie</h3>  
+                        </div>
+                        <div>
+                            <div class="photo"><img src="crea.jpg"></div>
+                            <h3 class="retouche">Création</h3>
+                        </div>
+                        <div>
+                            <div class="photo"><img src="form.jpg"></div>
+                            <h3 class="formateur">Formation</h3>
+                        </div>
+                        <div>
+                            <div class="photo"><img src="code.jpg"></div>
+                            <h3 class="webdev">HTML5 & CSS3</h3>
+                        </div>     
                     </div>
                 </div>
-            </section>
-            <section id="work">
-                <h2>Travaux réalisés</h2>
-                <hr/>
-                <div class="travaux">
-                    <div id="circle-container">
-                        <div id="cc">
-                            <div class="circle" id="five"></div>
-                            <div class="circle" id="four"></div>
-                            <div class="circle" id="three"></div>
-                            <div class="circle" id="two"></div>
-                            <div class="circle" id="photo"></div>
-                        </div>
-                    </div>
-                    <div id="circle-container">
-                            <div id="cc">
-                                <div class="circle" id="five"></div>
-                                <div class="circle" id="four"></div>
-                                <div class="circle" id="three"></div>
-                                <div class="circle" id="two"></div>
-                                <div class="circle" id="crea"></div>
-                            </div>
-                    </div>
-                    <div id="circle-container">
-                        <div id="cc">
-                            <div class="circle" id="five"></div>
-                            <div class="circle" id="four"></div>
-                            <div class="circle" id="three"></div>
-                            <div class="circle" id="two"></div>
-                            <div class="circle" id="code"></div>
-                        </div>
-                    </div>
-                </div>
-
             </section>
             <section id="contact" class="form">
                 <h2>Contactez-moi</h2>
-                <hr/>
                 <div class="coordonnees">
                     <div>
                         <form class="form" action="/ma-page-de-traitement" method="post">

@@ -26,18 +26,23 @@
 }
 .title {
 	font-family: "Dancing Script", cursive;
-	font-size: 3rem;
+	font-size: 2rem;
 	color: rgb(61, 168, 255);
+	position: relative;
+}
+.subtitle {
+	font-size: 0.7rem;
+	color: rgb(70, 72, 96);
 	position: relative;
 }
 .title::after {
 	position: absolute;
 	content: "";
 	width: 0%;
-	height: 4px;
+	height: 1px;
 	background-color: rgba(170, 126, 212, 0.726);
 	left: 50%;
-	bottom: -10px;
+	bottom: 1px;
 	transition: all 0.4s ease-in-out;
 }
 .container:hover .title::after {

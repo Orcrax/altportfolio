@@ -1,87 +1,39 @@
 <!DOCTYPE html>
 <html lang="fr-FR">
-    <head>
-        <meta charset="UTF-8"/>
-        <title>REBATÉ Matthieu - Portfolio</title>
-        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="mainalt.css"/>
-    </head>
-    <body>
-        <div id="bodypage">
-            <header>
-                <div class="circlepp">
-                    <a href="index.html"><img src="images/circlepp.png"/></a>
-                    <h1>Matthieu Rebaté</h1>
-                    <h2>Photographer - Web Developper</h2>
-                    <hr/>
-                </div>          
-                <nav class="sticky">
-                    <label>
-                        <input type="checkbox">
-                        <span class="menu"> <span class="hamburger"></span> </span>
-                        <ul class="navbar">
-                            <li><a href="#about">À propos</a></li>
-                            <li><a href="#comp">Compétences</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </label>
-                </nav>
-            </header>           
-            <section id="about">
-                <div class="presentation">
-                    <h2>À propos de moi :</h2>
-                    <p class="profil">Issu d'une formation très hétéroclite passant des arts à la grande distribution, puis au secrétariat médical/juridique, je me tourne désormais vers le codage HTML et CSS.<br/>
-                    Ayant suscité un intérêt très fort pour cette discipline, je cherche désormais à me perfectionner et à en explorer les différentes applications possibles.<br /><br /></p>
-                    <p class="formation">Mai 2022 : Formation HTML5 et CSS3 sur OpenClassRoom validée.<br/>
-                    Septembre 2022 : Entrée en formation à DonkeySchool.</p>
-                    <h2>Mes compétences :</h2>
-                    <div id="comp">                      
-                        <div>
-                            <div class="photo"><img src="images/wedding.JPG"></div>
-                            <h3 >Photographie</h3>  
-                        </div>
-                        <div>
-                            <div class="photo"><img src="images/crea.jpg"></div>
-                            <h3 class="retouche">Création</h3>
-                        </div>
-                        <div>
-                            <div class="photo"><img src="images/form.jpg"></div>
-                            <h3 class="formateur">Formation</h3>
-                        </div>
-                        <div>
-                            <div class="photo"><img src="images/code.jpg"></div>
-                            <h3 class="webdev">HTML5 & CSS3</h3>
-                        </div>     
+
+<head>
+    <meta charset="UTF-8" />
+    <title>REBATÉ Matthieu - Portfolio</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="mainalt.css" />
+</head>
+
+<body>
+    <div id="bodypage">
+        <div class="cardborder">
+            <div id="card" class="card">
+                <section id="about">
+                    <span class="titles">Bienvenue.</span>
+                    <div class="presentation">
+                        <p class="profil">Issu d'une formation hétéroclite passant des arts à la grande distribution,
+                            puis au
+                            secrétariat médical/juridique, je me tourne désormais vers le développement Web.<br />
+                            Ayant suscité un intérêt très fort pour cette discipline, je cherche désormais à me
+                            perfectionner et
+                            à en explorer les différentes applications possibles.<br /><br /></p>
+                        <p class="formation">Mai 2022 : Formation HTML5 et CSS3 sur OpenClassRoom validée.<br />
+                            Septembre 2022 à Mars 2023 : Formation à l'école DonkeySchool.</p>
                     </div>
-                </div>
-            </section>
-            <section id="contact" class="form">
-                <h2>Contactez-moi</h2>
-                <div class="coordonnees">
-                    <div>
-                        <form class="form" action="/ma-page-de-traitement" method="post">
-                            <label for="name">Nom :   </label>
-                            <input type="text" id="name" name="user_name" placeholder=" Nom et Prénom"/>
-                    </div>
-                    <div>
-                        <label for="mail">E-mail&nbsp;: </label>
-                        <input type="email" id="mail" name="user_mail" placeholder=" exemple@ndd.com">
-                    </div>
-                    <div>
-                        <label for="msg">Message :</label>
-                        <textarea id="msg" name="user_message" placeholder=" Taper votre message ici"></textarea>
-                    </div>
-                    <a class="envoyer" href="mailto:pro@matthieurebate.fr">Envoyer</a>
-                        </form>
-                </div>
-            </section> 
-            <footer>
-                <h4>Retrouvez-moi aussi sur :</h4>
-                <div class="logosm">
-                    <a href="https://www.facebook.com/Orcrax/"><img src="images/logofb.png"></a>
-                    <a href="https://mobile.twitter.com/orcrax"><img src="images/logotwitter.png"></a>
-                    <a href="https://www.instagram.com/orcrax/"><img src="images/logoinsta.png"></a>
-                </div>
-            </footer>
-        </div>          
-    </body>
+                </section>
+                <section id="projects">
+                    <span class="titles">Mes projets :</span>
+                    <ul>
+                        <li>Homemade PHP CRUD</li>
+                        <li>Angular's Pokedex</li>
+                        <li>Biblio Perso - IONIC</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>

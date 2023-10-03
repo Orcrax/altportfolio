@@ -1,375 +1,111 @@
     @media screen and (max-width: 700px) {
-        *, *:before, *:after 
-        { box-sizing: border-box; }
-        html { font-size: 18px; }
+        html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,
+        b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	        margin: 0;
+	        padding: 0;
+	        border: 0;
+	        font-size: 100%;
+	        font: inherit;
+	        vertical-align: baseline;
+            color :#969696;
+        }
         body {
-            font-size: 1.2em;
-            line-height: 1.4;
-            overflow-x: hidden;
-            background: url("images/background.jpg") fixed no-repeat;
-            font-family: Helvetica, sans-serif;
-        }
-        h2 {
-            text-align: center;
-            font-size: 1em;
-            text-decoration: underline;
-        }
-        label .menu {
-            position: absolute;
-            right: -100px;
-            top: -100px;
-            z-index: 100;
-            width: 200px;
-            height: 200px;
-            background: rgba(0, 127, 182, 0.8);
-            border-radius: 50% 50% 50% 50%;
-            -webkit-transition: .5s ease-in-out;
-            transition: .5s ease-in-out;
-            box-shadow: 0 0 0 0 rgba(0, 127, 182, 0.8), 0 0 0 0 rgba(0, 127, 182, 0.8);
-            cursor: pointer;
-            }
-        label .hamburger {
-            position: absolute;
-            top: 135px;
-            left: 50px;
-            width: 30px;
-            height: 2px;
-            background: #d6f4ff;
-            display: block;
-            -webkit-transform-origin: center;
-            transform-origin: center;
-            -webkit-transition: .5s ease-in-out;
-            transition: .5s ease-in-out;
-            }
-        label .hamburger:after, label .hamburger:before {
-            -webkit-transition: .5s ease-in-out;
-            transition: .5s ease-in-out;
-            content: "";
-            position: absolute;
-            display: block;
-            width: 100%;
             height: 100%;
-            background: #d6f4ff;
-            }
-        label .hamburger:before { top: -10px; }
-        label .hamburger:after { bottom: -10px; }
-        label input { display: none; }
-        label input:checked + .menu {
-        box-shadow: 0 0 0 100vw rgba(0, 127, 182, 0.8), 0 0 0 100vh rgba(0, 127, 182, 0.8);
-        border-radius: 0;
-        }
-        label input:checked + .menu .hamburger {
-        -webkit-transform: rotate(45deg);
-        transform: rotate(45deg);
-        }
-        label input:checked + .menu .hamburger:after {
-        -webkit-transform: rotate(90deg);
-        transform: rotate(90deg);
-        bottom: 0;
-        }
-        label input:checked + .menu .hamburger:before {
-        -webkit-transform: rotate(90deg);
-        transform: rotate(90deg);
-        top: 0;
-        }
-        label input:checked + .menu + ul { opacity: 1; }
-        label ul {
-            list-style-type: none;
-        z-index: 200;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        opacity: 0;
-        -webkit-transition: .25s 0s ease-in-out;
-        transition: .25s 0s ease-in-out;
-        }
-        label a {
-        margin-bottom: 2em;
-        display: block;
-        color: white;
-        text-decoration: none;
-        }
-        hr {
-            width: 40%;
-            margin-bottom: 3%;
-        }        
-        #bodypage {
-            width: 99%;
-            margin-top: 1%;
-            margin-bottom: 1%;
-            margin: 1% 0% 1% 1%;
-            background-color: rgba(228, 228, 228, 0.781);
             display: flex;
             align-items: center;
-            flex-direction: column;
+            justify-content: center;
+            line-height: 1;
+            background-color: #1d1d20;
         }
-            /*################################ NAV ######################################*/
-        .circlepp {
-            text-align: center;
-            margin-top: 5%;
+        ol, ul {
+            list-style: none;
         }
-        .circlepp hr {
-            width: 80%;
-            margin-top: 10%;
-        }
-        .circlepp h1 {
-            text-decoration: underline;
-            font-size: 1.7em;
-        }
-        .circlepp h2 {
-            padding-top: -5%;
-            font-size: 0.8em;
-            margin-top: -6%;
-        }
-        .circlepp img {
-            width: 50%;
-            margin-top: 3%;
-        }
-        .formation {
-            margin-bottom: 10%;
-        }
-        .presentation {
-            display: flex;
-            flex-direction: column;
-            width: 95%;
-            margin-left: 3%;
+        .titles {
+            color :#969696;
+            font-size: 2em;
         }
         .presentation p {
             font-size: 0.8em;
         }
-        .profil {
-            font-size: 2em;
+        .presentation {
+            width: 40%;
+    
         }
-        #comp {
+        #bodypage {
+            border: solid 1px white;
+            width: 100vw;
+            max-width: 1280px;
+            box-sizing: border-box;
+            margin-top: 0;
+            margin-bottom: 0;
             display: flex;
-            align-items: center;
-            flex-direction: column;
-            justify-content: space-between;
-            padding-left: 1%;
-            padding-right: 1%;
-            height: 25em;
-            margin-top: 5%;
+        }     
+        .projects {
+            align-self: flex-end;
         }
-        #comp h3 {
-            text-align: center;
-            position: relative;
-            top: -350px;
-            color: white;
-            background-color: rgba(0, 0, 0, 0.6 );
-        }
-        #comp div div {
-            margin-top: -3%;
-            height: 100%;
-        }
-        .photo {
-            margin-top: 24%;
-        }
-        /*################################## FORM #####################################*/
-        #contact h2 {
-            text-align: center;
-            margin-top: 10%;
-        }
-        #msg {
-            width: 500px;
-            height: 150px;
-        }
-        #mail {
-            width: 500px;
-            height: 30px;
-        }
-        #name {
-            width: 500px;
-            height: 30px;
-        }
-        .coordonnees {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .coordonnees div, .envoyer{
-            margin-top: 2%;
-            padding-bottom: 3%;
-        }
-        .coordonnees label {
-            display: none;
-        }
-        #contact {
-            background-color: rgba(1, 76, 110, 0.54);
-            width: 100%;
-            height: 70%;
-            margin-top: 280%;
-        }
-            /*################################## Footer ###################################*/
-    h4 {
-        text-align: center;
-        font-size: 0.8em;
-    }
-    .logosm {
-        display: flex;
-        justify-content: space-between;
-    }
-    .logosm img {
-        width: 60%;
-        margin-bottom: 10%;
-        margin-left: 15%;
-    }
 }
 
-/*########################################################################*/
-/*########################################################################*/   
-
 @media screen and (min-width: 701px) {        
-    .sticky label input {
-        display: none;
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+    b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	    margin: 0;
+	    padding: 0;
+	    border: 0;
+	    font-size: 100%;
+	    font: inherit;
+	    vertical-align: baseline;
+        color :#969696;
     }
     body {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        font-family: Helvetica, sans-serif;
-        background: url("images/background.jpg") fixed no-repeat;
+        height: 100vh;
+        background-color: #1d1d20;
     }
-    hr {
-        width: 40%;
-        margin-bottom: 3%;
-    }
-    #work h2, #about h2, #contact h2 {
-        text-align: center;
-        margin-top: 10%;
-    }
-    
     #bodypage {
-        width: 90%;
-        margin-top: 5%;
-        margin-bottom: 5%;
-        margin-left: 5%;
-        background-color: rgba(228, 228, 228, 0.781);
         display: flex;
-        align-items: center;
-        flex-direction: column;
-        border-radius: 5em;
+        border: solid 1px white;
+        box-sizing: border-box;
+        overflow: hidden;
+        height: 60vh;
+        width: 60vw;
+        padding: 20px;
+    }  
+    .cardborder .card {
+        border: solid 1px white;
+        max-width: 1280px;
+        box-sizing: border-box;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 20px;
+        display: flex;
+        position: relative;
     }
-    /*################################ NAV ######################################*/
-    header {
+    .cardborder {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
+        max-width: 60vw;
         height: 100%;
-    }
-    .circlepp {
-        text-align: right;
-    }
-    .circlepp hr {
-        display: none;
-    }
-    .circlepp h1 {
-        text-decoration: underline;
-    }
-    .circlepp h2 {
-        font-size: 0.9em;
-    }
-    .circlepp img {
-        width: 30%;
-        margin-top: 3%;
-    }
-    .sticky {
-        background-color: #567081b7;
-        position: sticky;
-        width: 100%;
-        margin-top: 2%;
-    }
-    nav ul {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-        list-style-type: none;
-        margin-left: -3%;
-    }
-    li a {
-        color: white;
-    }
+        box-sizing: border-box;
+    }   
 
-    /*################################# ABOUT ######################################*/
-    .presentation {
-        display: flex;
-        flex-direction: column;
+    .projects {
+        align-self: flex-end;
+    }
+    ol, ul {
+	    list-style: none;
+    }
+    .titles {
+        color :#969696;
+        font-size: 2em;
     }
     .presentation p {
-        margin-left: 5%;
-        margin-right: 10%;
+        font-size: 0.8em;
     }
-    #comp {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-left: 1%;
-        padding-right: 1%;
-        height: 25em;
-        margin-top: 5%;
-    }
-    #comp h3 {
-        text-align: center;
-        position: relative;
-        top: -225px;
-        color: white;
-        background-color: rgba(0, 0, 0, 0.6 );
-    }
-    #comp div div {
-        height: 100%;
-        margin-top: 25%;
+    .presentation {
+        width: 40%;
     }
 
-    .photo {
-        margin-top: 24%;
-    }
-    /*################################## FORM #####################################*/
-    form input {
-        margin-bottom: -6%;
-    }
-    #msg {
-        width: 500px;
-        height: 150px;
-    }
-    #mail {
-        width: 500px;
-        height: 30px;
-    }
-    #name {
-        width: 500px;
-        height: 30px;
-    }
-    .coordonnees {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .coordonnees div, .envoyer{
-        padding-bottom: 3%;
-    }
-    .coordonnees label {
-        display: none;
-    }
-    #contact {
-        background-color: rgba(1, 76, 110, 0.54);
-        width: 100%;
-        height: 70%;
-        margin-top: 5%;
-    }
-    /*################################## Footer ###################################*/
-    h4 {
-        text-align: center;
-    }
-    .logosm {
-        display: flex;
-        justify-content: space-between;
-    }
-    .logosm img {
-        width: 60%;
-        margin-bottom: 10%;
-        margin-left: 15%;
-    }
 }

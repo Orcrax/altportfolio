@@ -45,7 +45,6 @@ table {
 /* ################ RESET ############## */
 
 body {
-    display: flex;
     background-color : #08152b;
 }
 
@@ -56,47 +55,128 @@ body {
 .dateexp {
     color: #64748B;
     font-size: 0.7em;
+    min-width: 150px;
+    max-width: 150px;
 }
 h3 {
-    color: #64748B;
+    color: #ffffff;
     font-size: 0.8em;
 }
 
 p {
     color: #94A3B8;
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 
-h1, h2 {
+h2 {
     color: white;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
+}
+
+h1 {
+    color: white;
+    font-size: 2.5em;
 }
 
 .card {
     display: flex;
-    justify-content: space-evenly;
     margin-bottom: 2em;
+    padding: 1%;
+    border: 1px solid #08152b;
+    border-radius: 0.3em;
+
+}
+.card:hover {
     border: 1px solid black;
     border-radius: 0.3em;
-    padding: 1%;
+    background-color: #64748b1d;
+    cursor: pointer;
+}
+.card:hover h3 {
+    color: rgb(133, 188, 255);
 }
 
 #bodyzone {
     display: flex;
     width: 80%;
-    height: 80%;
-    margin-top: 3em;
     margin-left: auto;
     margin-right: auto;
     justify-content: space-around;
 }
 
 #leftpart {
-    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 75vh;
+    position: sticky;
+    top: 0;
+    padding: 95px;
 }
 
 #rightpart {
-    width: 70%;
+    width: 40%;
+    margin-top: 3em;
 }
 
+li {
+    list-style-type: none;
+    color: #94A3B8;
+    font-size: 0.8em;
+}
 
+.description {
+    min-width: 350px;
+    max-width: 350px;
+}
+
+.presentation {
+    margin-bottom: 2em;
+}
+
+img {
+    width: 13vmax;
+    margin-bottom: 2em;
+}
+
+.logoslink {
+    display: flex;
+    justify-content: space-around;
+    width: 10%;
+    position: fixed;
+    bottom: 0;
+}
+
+.logo {
+    justify-content: space-around;
+    max-width: 20px ;
+    min-width: 20px;
+    filter: grayscale(1);
+}
+
+.logo:hover {
+    filter: grayscale(0);
+}
+
+.navlist {
+    margin-top: 2em;
+}
+
+.navlist li {
+    margin-bottom: 0.5em;
+    cursor: pointer;
+    margin-left: 1em;
+}
+
+.navlist li:hover {
+    color: #ffffff;
+}
+
+.ancor {
+    border-bottom: 1px solid white;
+}
+
+a {
+    text-decoration: none;
+}

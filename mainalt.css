@@ -1,111 +1,43 @@
-    @media screen and (max-width: 700px) {
-        html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,
-        b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, 
-        menu, nav, output, ruby, section, summary, time, mark, audio, video {
-	        margin: 0;
-	        padding: 0;
-	        border: 0;
-	        font-size: 100%;
-	        font: inherit;
-	        vertical-align: baseline;
-            color :#969696;
-        }
-        body {
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            line-height: 1;
-            background-color: #1d1d20;
-        }
-        ol, ul {
-            list-style: none;
-        }
-        .titles {
-            color :#969696;
-            font-size: 2em;
-        }
-        .presentation p {
-            font-size: 0.8em;
-        }
-        .presentation {
-            width: 40%;
-    
-        }
-        #bodypage {
-            border: solid 1px white;
-            width: 100vw;
-            max-width: 1280px;
-            box-sizing: border-box;
-            margin-top: 0;
-            margin-bottom: 0;
-            display: flex;
-        }     
-        .projects {
-            align-self: flex-end;
-        }
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-
-@media screen and (min-width: 701px) {        
-    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
-    b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, 
-    menu, nav, output, ruby, section, summary, time, mark, audio, video {
-	    margin: 0;
-	    padding: 0;
-	    border: 0;
-	    font-size: 100%;
-	    font: inherit;
-	    vertical-align: baseline;
-        color :#969696;
-    }
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-color: #1d1d20;
-    }
-    #bodypage {
-        display: flex;
-        border: solid 1px white;
-        box-sizing: border-box;
-        overflow: hidden;
-        height: 60vh;
-        width: 60vw;
-        padding: 20px;
-    }  
-    .cardborder .card {
-        border: solid 1px white;
-        max-width: 1280px;
-        box-sizing: border-box;
-        margin-top: 0;
-        margin-bottom: 0;
-        padding: 20px;
-        display: flex;
-        position: relative;
-    }
-    .cardborder {
-        display: flex;
-        max-width: 60vw;
-        height: 100%;
-        box-sizing: border-box;
-    }   
-
-    .projects {
-        align-self: flex-end;
-    }
-    ol, ul {
-	    list-style: none;
-    }
-    .titles {
-        color :#969696;
-        font-size: 2em;
-    }
-    .presentation p {
-        font-size: 0.8em;
-    }
-    .presentation {
-        width: 40%;
-    }
-
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }

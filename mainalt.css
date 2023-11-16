@@ -41,3 +41,62 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* ################ RESET ############## */
+
+body {
+    display: flex;
+    background-color : #08152b;
+}
+
+.navancor {
+    display: flex;
+    flex-direction: column;
+}
+.dateexp {
+    color: #64748B;
+    font-size: 0.7em;
+}
+h3 {
+    color: #64748B;
+    font-size: 0.8em;
+}
+
+p {
+    color: #94A3B8;
+    font-size: 0.9em;
+}
+
+h1, h2 {
+    color: white;
+    margin-bottom: 2em;
+}
+
+.card {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2em;
+    border: 1px solid black;
+    border-radius: 0.3em;
+    padding: 1%;
+}
+
+#bodyzone {
+    display: flex;
+    width: 80%;
+    height: 80%;
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+}
+
+#leftpart {
+    width: 70%;
+}
+
+#rightpart {
+    width: 70%;
+}
+
+

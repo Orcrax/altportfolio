@@ -130,7 +130,7 @@ table {
     
     .presentation {
         margin-bottom: 1em;
-        width: 90vw;
+        width: 95vw;
     }
     
     .mobilepres p {
@@ -139,7 +139,7 @@ table {
 
     img {
         width: 20vmax;
-        margin-bottom: 2em;
+        margin-bottom: 1em;
     }
     
     .logoslink {
@@ -207,10 +207,14 @@ table {
         width: 30vw;
         text-wrap: wrap;
     }
+    .text {
+        width: 50vw;
+    }
     }
 @media screen and (min-width: 601px) {
 body {
     background-color : #08152b;
+    width: 100vw;
 }
 
 .navancor {
@@ -249,9 +253,7 @@ h1 {
     padding: 1%;
     border: 1px solid #08152b;
     border-radius: 0.3em;
-    max-width: 70vh;
-    min-width: 70vh;
-    text-wrap: wrap;
+    width: 35vw;
 
 }
 .card:hover {
@@ -259,7 +261,13 @@ h1 {
     border-radius: 0.3em;
     background-color: #64748b1d;
     cursor: pointer;
+    min-width: 500px;
 }
+
+.text {
+    width: 35vw;
+}
+
 .card:hover h3 {
     color: rgb(133, 188, 255);
 }
@@ -280,7 +288,7 @@ h1 {
     height: 75vh;
     position: sticky;
     top: 0;
-    padding: 95px;
+    padding-top: 95px;
 }
 
 #rightpart {
@@ -329,12 +337,14 @@ img {
 
 .navlist {
     margin-top: 2em;
+    width: fit-content;
 }
 
 .navlist li {
     margin-bottom: 0.5em;
     cursor: pointer;
     margin-left: 1em;
+    width: fit-content;
 }
 
 .navlist li:hover {
@@ -377,5 +387,9 @@ a {
     display: flex;
     width: 30vw;
     text-wrap: wrap;
+}
+
+.text {
+    width: 25vw;
 }
 }

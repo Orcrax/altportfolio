@@ -1,0 +1,9 @@
+#photography div h2 {
+    display: none;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.503);
+    position: relative;
+}
+.preview {
+width: 20%;
+}

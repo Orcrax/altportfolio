@@ -1,0 +1,403 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ################ RESET ############## */
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color : #08152b;
+    }
+    
+    .navancor {
+        display: flex;
+        flex-direction: column;
+    }
+    .dateexp {
+        color: #64748B;
+        font-size: 0.7em;
+        min-width: 150px;
+        max-width: 150px;
+    }
+    .retour {
+        display: none;
+    }
+    h3 {
+        color: #ffffff;
+        font-size: 0.8em;
+    }
+    
+    p {
+        color: #94A3B8;
+        font-size: 0.8em;
+    }
+    
+    h2 {
+        color: white;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+    
+    h1 {
+        color: white;
+        font-size: 2.5em;
+        text-align: center;
+    }
+    
+    .card {
+        display: flex;
+        margin-bottom: 2em;
+        padding: 1%;
+        border: 1px solid #08152b;
+        border-radius: 0.3em;
+        max-width: 50vh;
+        min-width: 50vh;
+        text-wrap: wrap;
+    
+    }
+    
+    #bodyzone {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        padding-left: 2%;
+        padding-right: 5%;
+        margin-top: 2em;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-around;
+    }
+    
+    #leftpart {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 32vh;
+    }
+    
+    #rightpart {
+        width: 40%;
+        margin-top: 3em;
+    }
+    
+    .card li, .navlist li {
+        list-style-type: none;
+        color: #94A3B8;
+        font-size: 0.8em;
+    }
+    
+    .description {
+        min-width: 350px;
+        max-width: 150px;
+    }
+    
+    .presentation {
+        margin-bottom: 1em;
+        width: 95vw;
+    }
+    
+    .mobilepres p {
+        display: none;
+    }
+
+    img {
+        width: 20vmax;
+        margin-bottom: 1em;
+    }
+    
+    .logoslink {
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+        bottom: 0;
+    }
+    
+    .logo {
+        justify-content: space-around;
+        max-width: 20px;
+        min-width: 20px;
+    }
+    
+    .navlist {
+        margin-top: 2em;
+        display: none;
+    }
+    
+    .navlist li {
+        margin-bottom: 0.5em;
+        cursor: pointer;
+        margin-left: 1em;
+    }
+    
+    .navlist li:hover {
+        color: #ffffff;
+    }
+    
+    .ancor {
+        border-bottom: 1px solid white;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .languages {
+        display: flex;
+        width: 30vw;
+        text-wrap: wrap;
+    }
+    
+    .languages .lang {
+        border-radius: 3em;
+        font-size: 0.6em;
+        background-color: rgba(0, 39, 88, 0.595);
+        color: #649dff;
+        padding: 0.7em;
+        margin-top: 0.5em;
+        margin-right: 0.5em;
+    }
+    .framework .frame {
+        border-radius: 3em;
+        font-size: 0.7em;
+        background-color: rgba(107, 0, 111, 0.306);
+        color: #bf84b5;
+        padding: 0.5em;
+        margin-top: 0.5em;
+        margin-right: 0.5em;
+    }
+    .framework {
+        display: flex;
+        width: 30vw;
+        text-wrap: wrap;
+    }
+    .text {
+        width: 50vw;
+    }
+    }
+@media screen and (min-width: 601px) {
+body {
+    background-color : #08152b;
+    width: 100vw;
+}
+.retour {
+    width: 120px;
+    position: fixed;
+    top: 2.5em;
+    left: 10em;
+}
+.navancor {
+    display: flex;
+    flex-direction: column;
+}
+.dateexp {
+    color: #64748B;
+    font-size: 0.8em;
+    min-width: 150px;
+    max-width: 150px;
+}
+h3 {
+    color: #ffffff;
+    font-size: 1.2em;
+}
+
+p {
+    color: #94A3B8;
+    font-size: 1.2em;
+}
+
+h2 {
+    color: white;
+    margin-bottom: 1em;
+}
+
+h1 {
+    color: white;
+    font-size: 3em;
+}
+
+.card {
+    display: flex;
+    margin-bottom: 2em;
+    padding: 1%;
+    border: 1px solid #08152b;
+    border-radius: 0.3em;
+    width: 35vw;
+
+}
+.card:hover {
+    border: 1px solid black;
+    border-radius: 0.3em;
+    background-color: #64748b1d;
+    cursor: pointer;
+    min-width: 500px;
+}
+
+.text {
+    width: 35vw;
+}
+
+.card:hover h3 {
+    color: rgb(133, 188, 255);
+}
+
+#bodyzone {
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+}
+
+#leftpart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 75vh;
+    position: sticky;
+    top: 0;
+    padding-top: 95px;
+}
+
+#rightpart {
+    width: 40%;
+    margin-top: 3em;
+}
+
+.card li, .navlist li {
+    list-style-type: none;
+    color: #94A3B8;
+    font-size: 1em;
+}
+
+.description {
+    min-width: 350px;
+    max-width: 150px;
+}
+
+.presentation {
+    margin-bottom: 2em;
+}
+
+.pp {
+    width: 20vmax;
+    margin-bottom: 2em;
+}
+
+.logoslink {
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+    position: fixed;
+    bottom: 0;
+}
+
+.logo {
+    justify-content: space-around;
+    max-width: 30px;
+    min-width: 30px;
+    filter: grayscale(1);
+}
+
+.logo:hover {
+    filter: grayscale(0);
+}
+
+.navlist {
+    margin-top: 2em;
+    width: fit-content;
+}
+
+.navlist li {
+    margin-bottom: 0.5em;
+    cursor: pointer;
+    margin-left: 1em;
+    width: fit-content;
+}
+
+.navlist li:hover {
+    color: #ffffff;
+}
+
+.ancor {
+    border-bottom: 1px solid white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.languages {
+    display: flex;
+    width: 30vw;
+    text-wrap: wrap;
+}
+
+.languages .lang {
+    border-radius: 3em;
+    font-size: 1em;
+    background-color: rgba(0, 39, 88, 0.595);
+    color: #649dff;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    margin-right: 0.5em;
+}
+.framework .frame {
+    border-radius: 3em;
+    font-size: 1em;
+    background-color: rgba(107, 0, 111, 0.306);
+    color: #bf84b5;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    margin-right: 0.5em;
+}
+.framework {
+    display: flex;
+    width: 30vw;
+    text-wrap: wrap;
+}
+
+.text {
+    width: 25vw;
+}
+}

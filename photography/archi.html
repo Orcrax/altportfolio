@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr-FR">
+
 <head>
     <link href="archicss.css" rel="stylesheet">
     <link href="../cv/cv.css" rel="stylesheet">
@@ -7,34 +8,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Architecture - Matthieu Rebaté</title>
 </head>
+
 <body>
-    <div>
-    <img class="preview" src="archi/venise/01.JPG">
-    <img class="preview" src="archi/venise/02.JPG">
-    <img class="preview" src="archi/venise/03.JPG">
-    <img class="preview" src="archi/venise/04.JPG">
-    <img class="preview" src="archi/venise/05.JPG">
-    <img class="preview" src="archi/venise/06.JPG">
-    <img class="preview" src="archi/venise/07.JPG">
-    <img class="preview" src="archi/venise/08.JPG">
-    <img class="preview" src="archi/venise/09.JPG">
-    <img class="preview" src="archi/venise/10.JPG">
-    <img class="preview" src="archi/venise/11.JPG">
-    <img class="preview" src="archi/venise/12.JPG">
-    <img class="preview" src="archi/venise/13.JPG">
-    <img class="preview" src="archi/venise/14.JPG">
+    <div class="dropdown">
+        <div onclick="myFunction()" class="dropbtnVenise">
+            <div class="presentationbtn">
+                <img class="presentationpic" src="archi/venise/13.JPG">
+                <div class="presentationtxt">
+                    <h2>Venise</h2>
+                    <p>Rétrospective sur mon voyage à Venise</p>
+                </div>
+            </div>
+            <div class="picturedisplayvenise" id="venise-photos"></div>
+        </div>        
     </div>
-    <div>
-    <img class="preview" src="archi/passages/01.jpg">
-    <img class="preview" src="archi/passages/02.jpg">
-    <img class="preview" src="archi/passages/03.jpg">
-    <img class="preview" src="archi/passages/04.jpg">
-    <img class="preview" src="archi/passages/05.jpg">
-    <img class="preview" src="archi/passages/06.jpg">
-    <img class="preview" src="archi/passages/07.jpg">
-    <img class="preview" src="archi/passages/08.jpg">
-    <img class="preview" src="archi/passages/09.jpg">
-    <img class="preview" src="archi/passages/10.jpg">
-</div>
+
+    <div class="dropdown">
+        <div onclick="myFunction()" class="dropbtnPassages">
+            <div class="presentationbtn">
+                <img class="presentationpic" src="archi/passages/04.jpg">
+                <div class="presentationtxt">
+                    <h2>Passages Parisien</h2>
+                    <p>Photographies prises dans le cadre de mon étude sur l'architecture des passages Parsiens</p>
+                </div>
+            </div>
+            <div class="picturedisplaypassages" id="passages-photos"></div>
+        </div>        
+    </div>
 </body>
+
+<script src="archi.js"></script>
+<script src="dropdown.js"></script>
+
 </html>

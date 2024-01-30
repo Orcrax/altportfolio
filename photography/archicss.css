@@ -7,3 +7,44 @@
 .preview {
 width: 20%;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.picturedisplayvenise, .picturedisplaypassages {
+    display: none;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    grid-auto-rows: minmax(10px, auto);
+    width: 60%;
+}
+img {
+    width: 50%;
+}
+.dropdown {
+    margin-bottom: 5em;
+}
+/* Dropdown Button */
+.dropbtnVenise, .dropbtnPassages {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: #3498DB 1px solid;
+    cursor: pointer;
+    width: 60%;
+    
+  }
+.presentationbtn {
+    display: flex;
+}
+.presentationpic {
+    width: 20%;
+}
+
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {
+    display:grid;
+}
